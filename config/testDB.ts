@@ -1,9 +1,9 @@
 import mongoose from 'mongoose'
 
-const MONGO_URI='mongodb+srv://admin:jan172004n@vandor.hsxbxp2.mongodb.net/?appName=vandor'
+const MONGO_URI='mongodb+srv://admin:jan172004@vandor.hsxbxp2.mongodb.net/?appName=vandor'
 
 mongoose.connect(MONGO_URI).then(() => {
-    console.log("Succesfully connected to mongoDB!")
+    console.log("Successfully connected to mongoDB!")
     process.exit(0);
 })
 .catch((err: unknown) => {

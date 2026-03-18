@@ -1,1 +1,1 @@
-export const MONGO_URI= 'mongodb+srv://admin:<jan172004>@vandor.hsxbxp2.mongodb.net/?appName=vandor'
+export const MONGO_URI= 'mongodb+srv://admin:jan172004@vandor.hsxbxp2.mongodb.net/?appName=vandor'
