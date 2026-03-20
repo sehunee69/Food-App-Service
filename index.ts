@@ -14,7 +14,8 @@ app.use('/admin', AdminRoute);
 app.use('/vandor', VandorRoute);
 
 mongoose.connect(MONGO_URI).then(result => {
-    console.log(result);
+    //console.log(result);
+    console.log('DB Connected!')
 }).catch(err => console.log('error' + err)) 
 
 app.listen(8000, () => {

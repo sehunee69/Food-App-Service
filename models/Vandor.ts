@@ -1,5 +1,4 @@
 import mongoose, { Schema, Document, Model} from 'mongoose';
-import { TypePredicateKind } from 'typescript';
 
 interface VandorDoc extends Document {
     name: string;
@@ -35,6 +34,15 @@ const VandorSchema = new Schema({
     //     ref: 'food'
     // }]
 }, {
+    toJSON: {
+        transform(doc, ret:any) {
+            delete ret.password;
+            delete ret.salt;
+            delete ret.__v;
+            delete ret.createdAt;
+            delete ret.updatedAt;
+        }
+    },
     timestamps: true
 });
 
